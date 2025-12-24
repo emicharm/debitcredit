@@ -1,0 +1,158 @@
+{
+    "id": "mieowkko",
+    "after": null,
+    "date": "12/20/2025",
+
+    "description": "euro exchange",
+    "category": "Exchange",
+
+    "movements": [
+        {
+            "account": "ТБанк",
+            "amount": "50000 RUB",
+            "kind": "debit",
+            "destination": "Internal"
+        },
+        {
+            "account": "ТБанк",
+            "amount": "300 RUB",
+            "kind": "debit",
+            "destination": "External",
+            "description": "Комиссия банка",
+            "balance": "144621.79 RUB"
+        },
+        {
+            "account": "IBT",
+            "amount": "509.90 EUR",
+            "kind": "credit",
+            "destination": "Internal",
+            "balance": "512.88 EUR"
+        }
+    ]
+}
+{
+    "id": "nioewnme",
+    "after": "mieowkko",
+    "date": "12/20/2025",
+
+    "description": "uber",
+    "category": "Taxi",
+
+    "movements": [
+        {
+            "account": "IBT",
+            "amount": "15924 ARS",
+            "kind": "debit",
+            "destination": "External",
+            "balance": "511.87 EUR"
+        }
+    ]
+}
+{
+    "id": "inoteimoio",
+    "after": "nioewnme",
+    "date": "12/20/2025",
+
+    "description": "uber",
+    "category": "Taxi",
+
+    "movements": [
+        {
+            "account": "IBT",
+            "amount": "16050 ARS",
+            "kind": "debit",
+            "destination": "External",
+            "balance": "501.78 EUR"
+        }
+    ]
+}
+{
+    "id": "onm2iorime",
+    "after": "inoteimoio",
+    "date": "12/20/2025",
+
+    "description": "uber",
+    "category": "Taxi",
+
+    "movements": [
+        {
+            "account": "IBT",
+            "amount": "15924 ARS",
+            "kind": "credit",
+            "destination": "External",
+            "balance": "511.79 EUR"
+        }
+    ]
+}
+{
+    "id": "ino4n3om22",
+    "after": "onm2iorime",
+    "date": "12/20/2025",
+
+    "description": "uber",
+    "category": "Taxi",
+
+    "movements": [
+        {
+            "account": "IBT",
+            "amount": "15,286.00 ARS",
+            "kind": "debit",
+            "destination": "External",
+            "balance": "502.19 EUR"
+        }
+    ]
+}
+{
+    "id": "oniomteok",
+    "after": "ino4n3om22",
+    "date": "12/20/2025",
+
+    "description": "uber",
+    "category": "Taxi",
+
+    "movements": [
+        {
+            "account": "IBT",
+            "amount": "15,302.00 ARS",
+            "kind": "debit",
+            "destination": "External",
+            "balance": "492.57 EUR"
+        }
+    ]
+}
+{
+    "id": "inoemrkklel",
+    "after": "oniomteok",
+    "date": "12/20/2025",
+
+    "description": "kiosco",
+    "category": "Grocery",
+
+    "movements": [
+        {
+            "account": "IBT",
+            "amount": "3,400.00 ARS",
+            "kind": "debit",
+            "destination": "External",
+            "balance": "490.43 EUR"
+        }
+    ]
+}
+{
+    "id": "oinrioen",
+    "after": "inoemrkklel",
+    "date": "12/20/2025",
+
+    "description": "uber",
+    "category": "Taxi",
+
+    "movements": [
+        {
+            "account": "IBT",
+            "amount": "15,286.00 ARS",
+            "kind": "credit",
+            "destination": "External",
+            "balance": "500.03 EUR"
+        }
+    ]
+}
