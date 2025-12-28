@@ -1,5 +1,10 @@
 // place files you want to import through the `$lib` alias in this folder.
 
+export interface Account {
+    name: string;
+    currency: string;
+}
+
 export interface Amount {
     value: number;
     currency: string;
@@ -22,25 +27,27 @@ export function formatAmount(amount: Amount, sep: string = ' '): string {
     return `${sign}${formattedValue}`;
 }
 
-    type MovementKind = "debit" | "credit"
+export type MovementKind = "debit" | "credit"
 
-    interface MovementValue {
-        description: string;
-        is_internal: boolean;
-        is_exchanged?: boolean;
-        amount: Amount;
-        kind: MovementKind;
-    };
+interface MovementValue {
+    description: string;
+    is_internal: boolean;
+    is_exchanged?: boolean;
+    amount: Amount;
+    kind: MovementKind;
+};
 
-    interface Movement {
-        account_name: string;
-        account_balance: Amount;
-        values: MovementValue[];
-    }
+interface Movement {
+    account: Account;
+    account_balance: Amount;
+    values: MovementValue[];
+}
 
-    export interface TransactionCell {
-        category: string;
-        color?: string;
-        icon?: any;
-        movements: Movement[];
-    }
+export interface Transaction {
+    id: string;
+    category: string;
+    color?: string;
+    icon?: any;
+    date: string;
+    movements: Movement[];
+}

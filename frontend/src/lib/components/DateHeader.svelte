@@ -1,8 +1,8 @@
 <script lang="ts">
     import { isToday, isYesterday, format } from 'date-fns';
     import { ru } from 'date-fns/locale';
-    import type {Amount} from "$lib"
-    import {formatAmount} from "$lib"
+    import type {Amount} from "$lib/model"
+    import {formatAmount} from "$lib/model"
 
 
     let { 

@@ -1,4 +1,4 @@
 import { writable } from 'svelte/store';
-import type { TransactionCell } from '$lib';
+import type { Transaction } from '$lib/model';
 
-export const selectedTransaction = writable<TransactionCell | null>(null);
+export const selectedTransaction = writable<Transaction | null>(null);

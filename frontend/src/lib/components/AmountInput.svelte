@@ -1,17 +1,35 @@
 <script lang="ts">
-    import { formatAmount } from "$lib";
-    import type { Amount } from "$lib";
+    import { formatAmount } from "$lib/model";
+    import type { Amount, MovementKind } from "$lib/model";
 
     let {
         amount = $bindable(),
-        colorClass = "text-white",
+        styleClass = "",
     }: {
         amount: Amount;
-        colorClass?: string;
+        styleClass: string;
     } = $props();
 
     let inputRef: HTMLInputElement;
     let displayValue = $state(formatAmount(amount));
+    let inputWidth = $state('auto');
+
+    // Calculate width based on content
+    $effect(() => {
+        if (inputRef) {
+            // Create a temporary span to measure text width
+            const span = document.createElement('span');
+            span.style.visibility = 'hidden';
+            span.style.position = 'absolute';
+            span.style.whiteSpace = 'pre';
+            span.className = inputRef.className;
+            span.textContent = displayValue || '0';
+            document.body.appendChild(span);
+            const width = span.offsetWidth;
+            document.body.removeChild(span);
+            inputWidth = `${Math.max(width + 4, 20)}px`;
+        }
+    });
 
     // Update displayValue when amount changes externally
     $effect(() => {
@@ -25,9 +43,14 @@
     }
 
     function handleBlur() {
-        const numValue = parseFloat(displayValue);
+        // Replace comma with period for parsing
+        const normalizedValue = displayValue.replace(/,/g, '.');
+        const numValue = Math.abs(parseFloat(normalizedValue));
         if (!isNaN(numValue)) {
             amount.value = numValue;
+        } else {
+            // Set to zero if empty or invalid
+            amount.value = 0;
         }
         displayValue = formatAmount(amount);
     }
@@ -39,5 +62,6 @@
     onfocus={handleFocus}
     onblur={handleBlur}
     type="text"
-    class={`text-lg font-bold text-right bg-transparent border-none outline-none ${colorClass} w-full max-w-full px-0 h-auto leading-none py-0`}
-/>
+    inputmode="decimal"
+    style="width: {inputWidth}; min-height: 1em; max-height: 1em; -webkit-text-size-adjust: 100%; vertical-align: center;"
+    class={`text-right bg-transparent border-none outline-none px-0 h-[1em] leading-[1em] py-0 box-content overflow-hidden ${styleClass}`}/>

@@ -1,12 +1,11 @@
 [
   {
-    "order": 160,
+    "id": "import-160",
     "date": "12/23/2025",
     "category": "Mobile",
-    "color": "bg-cyan-500",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 46309.79,
           "currency": "RUB"
@@ -27,13 +26,12 @@
     ]
   },
   {
-    "order": 159,
+    "id": "import-159",
     "date": "12/23/2025",
     "category": "mia refund",
-    "color": "gray",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 47309.79,
           "currency": "RUB"
@@ -54,13 +52,12 @@
     ]
   },
   {
-    "order": 158,
+    "id": "import-158",
     "date": "12/23/2025",
     "category": "mia refund",
-    "color": "gray",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 44344.79,
           "currency": "RUB"
@@ -81,13 +78,12 @@
     ]
   },
   {
-    "order": 157,
+    "id": "import-157",
     "date": "12/22/2025",
     "category": "USDT Exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 10077.19,
           "currency": "USDT"
@@ -108,13 +104,12 @@
     ]
   },
   {
-    "order": 156,
+    "id": "import-156",
     "date": "12/22/2025",
     "category": "USDT Exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 38821.79,
           "currency": "RUB"
@@ -135,12 +130,12 @@
     ]
   },
   {
-    "order": 155,
+    "id": "import-155",
     "date": "12/21/2025",
     "category": "Physcology",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 88821.79,
           "currency": "RUB"
@@ -161,13 +156,12 @@
     ]
   },
   {
-    "order": 154,
+    "id": "import-154",
     "date": "12/20/2025",
     "category": "usdt exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 9475.79,
           "currency": "USDT"
@@ -188,13 +182,12 @@
     ]
   },
   {
-    "order": 153,
+    "id": "import-153",
     "date": "12/20/2025",
     "category": "usdt exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 94621.79,
           "currency": "RUB"
@@ -215,13 +208,12 @@
     ]
   },
   {
-    "order": 152,
+    "id": "import-152",
     "date": "12/20/2025",
     "category": "Storno",
-    "color": "gray",
     "movements": [
       {
-        "account_name": "IBT",
+        "account": {"name": "IBT", "currency": "EUR"},
         "account_balance": {
           "value": 521.88,
           "currency": "EUR"
@@ -242,13 +234,12 @@
     ]
   },
   {
-    "order": 151,
+    "id": "import-151",
     "date": "12/20/2025",
     "category": "euro exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "IBT",
+        "account": {"name": "IBT", "currency": "EUR"},
         "account_balance": {
           "value": 3752.61,
           "currency": "EUR"
@@ -269,13 +260,12 @@
     ]
   },
   {
-    "order": 150,
+    "id": "import-150",
     "date": "12/20/2025",
     "category": "euro exchange commision",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 144621.79,
           "currency": "RUB"
@@ -296,13 +286,12 @@
     ]
   },
   {
-    "order": 149,
+    "id": "import-149",
     "date": "12/20/2025",
     "category": "euro exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 144921.79,
           "currency": "RUB"
@@ -323,12 +312,12 @@
     ]
   },
   {
-    "order": 148,
+    "id": "import-148",
     "date": "12/19/2025",
     "category": "Storno",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 194921.79,
           "currency": "RUB"
@@ -349,13 +338,12 @@
     ]
   },
   {
-    "order": 147,
+    "id": "import-147",
     "date": "12/19/2025",
     "category": "Salary",
-    "color": "green",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 360376.97,
           "currency": "RUB"
@@ -376,12 +364,12 @@
     ]
   },
   {
-    "order": 146,
+    "id": "import-146",
     "date": "12/19/2025",
     "category": "Storno",
     "movements": [
       {
-        "account_name": "ТБанк Счет RUB",
+        "account": {"name": "ТБанк Счет", "currency": "RUB"},
         "account_balance": {
           "value": 492256.83,
           "currency": "RUB"
@@ -402,12 +390,12 @@
     ]
   },
   {
-    "order": 145,
+    "id": "import-145",
     "date": "12/19/2025",
     "category": "Storno",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 187401.97,
           "currency": "RUB"
@@ -428,12 +416,12 @@
     ]
   },
   {
-    "order": 144,
+    "id": "import-144",
     "date": "12/18/2025",
     "category": "Steam",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 679658.8,
           "currency": "RUB"
@@ -454,12 +442,12 @@
     ]
   },
   {
-    "order": 143,
+    "id": "import-143",
     "date": "12/18/2025",
     "category": "Pet",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 681708.8,
           "currency": "RUB"
@@ -480,12 +468,12 @@
     ]
   },
   {
-    "order": 142,
+    "id": "import-142",
     "date": "12/18/2025",
     "category": "Pet",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 684048.8,
           "currency": "RUB"
@@ -506,12 +494,12 @@
     ]
   },
   {
-    "order": 141,
+    "id": "import-141",
     "date": "12/14/2025",
     "category": "Hygiene",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 737000,
           "currency": "ARS"
@@ -532,12 +520,12 @@
     ]
   },
   {
-    "order": 140,
+    "id": "import-140",
     "date": "12/14/2025",
     "category": "Hygiene",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 742500,
           "currency": "ARS"
@@ -558,12 +546,12 @@
     ]
   },
   {
-    "order": 139,
+    "id": "import-139",
     "date": "12/14/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "IBT",
+        "account": {"name": "IBT", "currency": "EUR"},
         "account_balance": {
           "value": 3242.71,
           "currency": "EUR"
@@ -584,12 +572,12 @@
     ]
   },
   {
-    "order": 138,
+    "id": "import-138",
     "date": "12/14/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "IBT ARS",
+        "account": {"name": "IBT", "currency": "ARS"},
         "account_balance": {
           "value": 0,
           "currency": "ARS"
@@ -610,12 +598,12 @@
     ]
   },
   {
-    "order": 137,
+    "id": "import-137",
     "date": "12/14/2025",
     "category": "Pet",
     "movements": [
       {
-        "account_name": "IBT ARS",
+        "account": {"name": "IBT", "currency": "ARS"},
         "account_balance": {
           "value": 0,
           "currency": "ARS"
@@ -636,12 +624,12 @@
     ]
   },
   {
-    "order": 136,
+    "id": "import-136",
     "date": "12/14/2025",
     "category": "Housing",
     "movements": [
       {
-        "account_name": "IBT ARS",
+        "account": {"name": "IBT", "currency": "ARS"},
         "account_balance": {
           "value": 0,
           "currency": "ARS"
@@ -662,12 +650,12 @@
     ]
   },
   {
-    "order": 135,
+    "id": "import-135",
     "date": "12/14/2025",
     "category": "Hygiene",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 748000,
           "currency": "ARS"
@@ -688,12 +676,12 @@
     ]
   },
   {
-    "order": 134,
+    "id": "import-134",
     "date": "12/14/2025",
     "category": "Cleaning",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 750133,
           "currency": "ARS"
@@ -714,12 +702,12 @@
     ]
   },
   {
-    "order": 133,
+    "id": "import-133",
     "date": "12/14/2025",
     "category": "Drinks",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 755811,
           "currency": "ARS"
@@ -740,12 +728,12 @@
     ]
   },
   {
-    "order": 132,
+    "id": "import-132",
     "date": "12/13/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "IBT",
+        "account": {"name": "IBT", "currency": "EUR"},
         "account_balance": {
           "value": 3275.56,
           "currency": "EUR"
@@ -766,12 +754,12 @@
     ]
   },
   {
-    "order": 131,
+    "id": "import-131",
     "date": "12/13/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "IBT ARS",
+        "account": {"name": "IBT", "currency": "ARS"},
         "account_balance": {
           "value": 0,
           "currency": "ARS"
@@ -792,12 +780,12 @@
     ]
   },
   {
-    "order": 130,
+    "id": "import-130",
     "date": "12/13/2025",
     "category": "Cleaning",
     "movements": [
       {
-        "account_name": "IBT ARS",
+        "account": {"name": "IBT", "currency": "ARS"},
         "account_balance": {
           "value": 0,
           "currency": "ARS"
@@ -818,12 +806,12 @@
     ]
   },
   {
-    "order": 129,
+    "id": "import-129",
     "date": "12/13/2025",
     "category": "Cleaning",
     "movements": [
       {
-        "account_name": "IBT ARS",
+        "account": {"name": "IBT", "currency": "ARS"},
         "account_balance": {
           "value": 0,
           "currency": "ARS"
@@ -844,12 +832,12 @@
     ]
   },
   {
-    "order": 128,
+    "id": "import-128",
     "date": "12/13/2025",
     "category": "Pharmacy",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 758800,
           "currency": "ARS"
@@ -870,12 +858,12 @@
     ]
   },
   {
-    "order": 127,
+    "id": "import-127",
     "date": "12/13/2025",
     "category": "Pharmacy",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 768460,
           "currency": "ARS"
@@ -896,12 +884,12 @@
     ]
   },
   {
-    "order": 126,
+    "id": "import-126",
     "date": "12/12/2025",
     "category": "Bar \u0026 Restaurants",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 793400,
           "currency": "ARS"
@@ -922,13 +910,12 @@
     ]
   },
   {
-    "order": 125,
+    "id": "import-125",
     "date": "12/12/2025",
     "category": "Mobile",
-    "color": "bg-cyan-500",
     "movements": [
       {
-        "account_name": "Prex ARS",
+        "account": {"name": "Prex", "currency": "ARS"},
         "account_balance": {
           "value": 147439,
           "currency": "ARS"
@@ -949,12 +936,12 @@
     ]
   },
   {
-    "order": 124,
+    "id": "import-124",
     "date": "12/14/2025",
     "category": "Physcology",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 686648.8,
           "currency": "RUB"
@@ -975,12 +962,12 @@
     ]
   },
   {
-    "order": 123,
+    "id": "import-123",
     "date": "12/13/2025",
     "category": "Gift",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 692448.8,
           "currency": "RUB"
@@ -1001,12 +988,12 @@
     ]
   },
   {
-    "order": 122,
+    "id": "import-122",
     "date": "12/12/2025",
     "category": "Pharmacy",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 697798.8,
           "currency": "RUB"
@@ -1027,13 +1014,12 @@
     ]
   },
   {
-    "order": 121,
+    "id": "import-121",
     "date": "12/10/2025",
     "category": "usdt exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 8878.06,
           "currency": "USDT"
@@ -1054,13 +1040,12 @@
     ]
   },
   {
-    "order": 120,
+    "id": "import-120",
     "date": "12/10/2025",
     "category": "usdt exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 700048.8,
           "currency": "RUB"
@@ -1081,12 +1066,12 @@
     ]
   },
   {
-    "order": 119,
+    "id": "import-119",
     "date": "12/9/2025",
     "category": "MERPAGO*NAKSTUFF mesa",
     "movements": [
       {
-        "account_name": "Prex ARS",
+        "account": {"name": "Prex", "currency": "ARS"},
         "account_balance": {
           "value": 157239,
           "currency": "ARS"
@@ -1107,13 +1092,12 @@
     ]
   },
   {
-    "order": 118,
+    "id": "import-118",
     "date": "12/9/2025",
     "category": "usdt exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 8265.31,
           "currency": "USDT"
@@ -1134,13 +1118,12 @@
     ]
   },
   {
-    "order": 117,
+    "id": "import-117",
     "date": "12/9/2025",
     "category": "usdt exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 750048.8,
           "currency": "RUB"
@@ -1161,13 +1144,12 @@
     ]
   },
   {
-    "order": 116,
+    "id": "import-116",
     "date": "12/7/2025",
     "category": "Reversing entry",
-    "color": "gray",
     "movements": [
       {
-        "account_name": "IBT",
+        "account": {"name": "IBT", "currency": "EUR"},
         "account_balance": {
           "value": 250,
           "currency": "USD"
@@ -1188,13 +1170,12 @@
     ]
   },
   {
-    "order": 115,
+    "id": "import-115",
     "date": "12/7/2025",
     "category": "Reversing entry",
-    "color": "gray",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 800048.8,
           "currency": "RUB"
@@ -1215,13 +1196,12 @@
     ]
   },
   {
-    "order": 114,
+    "id": "import-114",
     "date": "12/7/2025",
     "category": "Reversing entry",
-    "color": "gray",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 853400,
           "currency": "ARS"
@@ -1242,12 +1222,12 @@
     ]
   },
   {
-    "order": 113,
+    "id": "import-113",
     "date": "12/7/2025",
     "category": "Entertainment",
     "movements": [
       {
-        "account_name": "Prex ARS",
+        "account": {"name": "Prex", "currency": "ARS"},
         "account_balance": {
           "value": 527239,
           "currency": "ARS"
@@ -1268,12 +1248,12 @@
     ]
   },
   {
-    "order": 112,
+    "id": "import-112",
     "date": "12/7/2025",
     "category": "Clothing",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 0,
           "currency": "ARS"
@@ -1294,12 +1274,12 @@
     ]
   },
   {
-    "order": 111,
+    "id": "import-111",
     "date": "12/7/2025",
     "category": "Clothing",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 0,
           "currency": "ARS"
@@ -1320,12 +1300,12 @@
     ]
   },
   {
-    "order": 110,
+    "id": "import-110",
     "date": "12/7/2025",
     "category": "Clothing",
     "movements": [
       {
-        "account_name": "Cash ARS",
+        "account": {"name": "Cash", "currency": "ARS"},
         "account_balance": {
           "value": 0,
           "currency": "ARS"
@@ -1346,12 +1326,12 @@
     ]
   },
   {
-    "order": 109,
+    "id": "import-109",
     "date": "12/7/2025",
     "category": "Mental Health",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 795978.9,
           "currency": "RUB"
@@ -1372,12 +1352,12 @@
     ]
   },
   {
-    "order": 108,
+    "id": "import-108",
     "date": "12/6/2025",
     "category": "Furniture",
     "movements": [
       {
-        "account_name": "Prex ARS",
+        "account": {"name": "Prex", "currency": "ARS"},
         "account_balance": {
           "value": 549739,
           "currency": "ARS"
@@ -1398,12 +1378,12 @@
     ]
   },
   {
-    "order": 106,
+    "id": "import-106",
     "date": "12/6/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 801778.9,
           "currency": "RUB"
@@ -1422,7 +1402,7 @@
         ]
       },
       {
-        "account_name": "Prex",
+        "account": {"name": "Prex", "currency": "ARS"},
         "account_balance": {
           "value": 913000,
           "currency": "ARS"
@@ -1443,12 +1423,12 @@
     ]
   },
   {
-    "order": 105,
+    "id": "import-105",
     "date": "12/5/2025",
     "category": "Beauty",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 7652.56,
           "currency": "USDT"
@@ -1469,12 +1449,12 @@
     ]
   },
   {
-    "order": 104,
+    "id": "import-104",
     "date": "12/5/2025",
     "category": "Refund",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 851778.9,
           "currency": "RUB"
@@ -1495,12 +1475,12 @@
     ]
   },
   {
-    "order": 103,
+    "id": "import-103",
     "date": "12/5/2025",
     "category": "Gift",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 835778.9,
           "currency": "RUB"
@@ -1521,13 +1501,12 @@
     ]
   },
   {
-    "order": 102,
+    "id": "import-102",
     "date": "12/5/2025",
     "category": "Salary",
-    "color": "green",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 835878.9,
           "currency": "RUB"
@@ -1548,12 +1527,12 @@
     ]
   },
   {
-    "order": 101,
+    "id": "import-101",
     "date": "12/4/2025",
     "category": "Lend",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 653800.38,
           "currency": "RUB"
@@ -1574,12 +1553,12 @@
     ]
   },
   {
-    "order": 100,
+    "id": "import-100",
     "date": "12/3/2025",
     "category": "Rent",
     "movements": [
       {
-        "account_name": "Cash",
+        "account": {"name": "Cash", "currency": "USD"},
         "account_balance": {
           "value": 225,
           "currency": "USD"
@@ -1600,12 +1579,12 @@
     ]
   },
   {
-    "order": 99,
+    "id": "import-99",
     "date": "12/2/2025",
     "category": "Education",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 654400.38,
           "currency": "RUB"
@@ -1626,12 +1605,12 @@
     ]
   },
   {
-    "order": 98,
+    "id": "import-98",
     "date": "11/30/2025",
     "category": "Electronics",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 7725.56,
           "currency": "USDT"
@@ -1652,12 +1631,12 @@
     ]
   },
   {
-    "order": 97,
+    "id": "import-97",
     "date": "11/30/2025",
     "category": "Mental Health",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 661900.38,
           "currency": "RUB"
@@ -1678,12 +1657,12 @@
     ]
   },
   {
-    "order": 96,
+    "id": "import-96",
     "date": "11/30/2025",
     "category": "Lend",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 667700.38,
           "currency": "RUB"
@@ -1704,12 +1683,12 @@
     ]
   },
   {
-    "order": 95,
+    "id": "import-95",
     "date": "11/29/2025",
     "category": "Beauty",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 8075.56,
           "currency": "USDT"
@@ -1730,12 +1709,12 @@
     ]
   },
   {
-    "order": 94,
+    "id": "import-94",
     "date": "11/28/2025",
     "category": "Lend",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 668400.38,
           "currency": "RUB"
@@ -1756,12 +1735,12 @@
     ]
   },
   {
-    "order": 93,
+    "id": "import-93",
     "date": "11/28/2025",
     "category": "Beauty",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 8105.56,
           "currency": "USDT"
@@ -1782,12 +1761,12 @@
     ]
   },
   {
-    "order": 91,
+    "id": "import-91",
     "date": "11/28/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 669600.38,
           "currency": "RUB"
@@ -1806,7 +1785,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 8143.56,
           "currency": "USDT"
@@ -1827,12 +1806,12 @@
     ]
   },
   {
-    "order": 90,
+    "id": "import-90",
     "date": "11/28/2025",
     "category": "Lend",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 8125.76,
           "currency": "USDT"
@@ -1854,13 +1833,12 @@
     ]
   },
   {
-    "order": 88,
+    "id": "import-88",
     "date": "11/28/2025",
     "category": "Exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 671100.38,
           "currency": "RUB"
@@ -1879,7 +1857,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 8117.16,
           "currency": "USDT"
@@ -1900,12 +1878,12 @@
     ]
   },
   {
-    "order": 87,
+    "id": "import-87",
     "date": "11/28/2025",
     "category": "Beauty",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 7518,
           "currency": "USDT"
@@ -1926,12 +1904,12 @@
     ]
   },
   {
-    "order": 85,
+    "id": "import-85",
     "date": "11/26/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 721100.38,
           "currency": "RUB"
@@ -1960,7 +1938,7 @@
         ]
       },
       {
-        "account_name": "IBT",
+        "account": {"name": "IBT", "currency": "EUR"},
         "account_balance": {
           "value": 4010.44,
           "currency": "EUR"
@@ -1981,12 +1959,12 @@
     ]
   },
   {
-    "order": 83,
+    "id": "import-83",
     "date": "11/26/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 7566,
           "currency": "USDT"
@@ -2005,7 +1983,7 @@
         ]
       },
       {
-        "account_name": "Cash",
+        "account": {"name": "Cash", "currency": "USD"},
         "account_balance": {
           "value": 975,
           "currency": "USD"
@@ -2026,12 +2004,12 @@
     ]
   },
   {
-    "order": 82,
+    "id": "import-82",
     "date": "11/26/2025",
     "category": "Gift",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 815840.38,
           "currency": "RUB"
@@ -2052,12 +2030,12 @@
     ]
   },
   {
-    "order": 80,
+    "id": "import-80",
     "date": "11/26/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 816840.38,
           "currency": "RUB"
@@ -2076,7 +2054,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 8538.58,
           "currency": "USDT"
@@ -2097,12 +2075,12 @@
     ]
   },
   {
-    "order": 79,
+    "id": "import-79",
     "date": "11/25/2025",
     "category": "Beauty",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 7950,
           "currency": "USDT"
@@ -2123,12 +2101,12 @@
     ]
   },
   {
-    "order": 77,
+    "id": "import-77",
     "date": "11/25/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 866840.38,
           "currency": "RUB"
@@ -2147,7 +2125,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 7990,
           "currency": "USDT"
@@ -2168,12 +2146,12 @@
     ]
   },
   {
-    "order": 76,
+    "id": "import-76",
     "date": "11/24/2025",
     "category": "Refund",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 916840.38,
           "currency": "RUB"
@@ -2195,12 +2173,12 @@
     ]
   },
   {
-    "order": 74,
+    "id": "import-74",
     "date": "11/24/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 912840.38,
           "currency": "RUB"
@@ -2219,7 +2197,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 7401.42,
           "currency": "USDT"
@@ -2240,12 +2218,12 @@
     ]
   },
   {
-    "order": 73,
+    "id": "import-73",
     "date": "11/24/2025",
     "category": "Mental Health",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 962840.38,
           "currency": "RUB"
@@ -2266,12 +2244,12 @@
     ]
   },
   {
-    "order": 72,
+    "id": "import-72",
     "date": "11/22/2025",
     "category": "Games",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 968640.38,
           "currency": "RUB"
@@ -2292,12 +2270,12 @@
     ]
   },
   {
-    "order": 70,
+    "id": "import-70",
     "date": "11/21/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 970290.38,
           "currency": "RUB"
@@ -2316,7 +2294,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 6816.28,
           "currency": "USDT"
@@ -2337,12 +2315,12 @@
     ]
   },
   {
-    "order": 69,
+    "id": "import-69",
     "date": "11/20/2025",
     "category": "Lend",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 1020290.38,
           "currency": "RUB"
@@ -2364,13 +2342,12 @@
     ]
   },
   {
-    "order": 68,
+    "id": "import-68",
     "date": "11/20/2025",
     "category": "Reversing entry",
-    "color": "gray",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 1020790.38,
           "currency": "RUB"
@@ -2391,13 +2368,12 @@
     ]
   },
   {
-    "order": 67,
+    "id": "import-67",
     "date": "11/20/2025",
     "category": "Salary",
-    "color": "green",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 395881.66,
           "currency": "RUB"
@@ -2418,12 +2394,12 @@
     ]
   },
   {
-    "order": 65,
+    "id": "import-65",
     "date": "11/20/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 232010.18,
           "currency": "RUB"
@@ -2442,7 +2418,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 6231.14,
           "currency": "USDT"
@@ -2463,12 +2439,12 @@
     ]
   },
   {
-    "order": 64,
+    "id": "import-64",
     "date": "11/20/2025",
     "category": "Pharmacy",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 282010.18,
           "currency": "RUB"
@@ -2489,12 +2465,12 @@
     ]
   },
   {
-    "order": 62,
+    "id": "import-62",
     "date": "11/20/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 5646,
           "currency": "USDT"
@@ -2513,7 +2489,7 @@
         ]
       },
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 290930.18,
           "currency": "RUB"
@@ -2534,12 +2510,12 @@
     ]
   },
   {
-    "order": 61,
+    "id": "import-61",
     "date": "11/20/2025",
     "category": "Pharmacy",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 5896,
           "currency": "USDT"
@@ -2560,12 +2536,12 @@
     ]
   },
   {
-    "order": 59,
+    "id": "import-59",
     "date": "11/19/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 269680.18,
           "currency": "RUB"
@@ -2584,7 +2560,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 5936,
           "currency": "USDT"
@@ -2605,13 +2581,12 @@
     ]
   },
   {
-    "order": 58,
+    "id": "import-58",
     "date": "11/19/2025",
     "category": "Reversing entry",
-    "color": "gray",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 5350.86,
           "currency": "USDT"
@@ -2632,13 +2607,12 @@
     ]
   },
   {
-    "order": 57,
+    "id": "import-57",
     "date": "11/19/2025",
     "category": "Salary",
-    "color": "green",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 319680.18,
           "currency": "RUB"
@@ -2659,12 +2633,12 @@
     ]
   },
   {
-    "order": 55,
+    "id": "import-55",
     "date": "11/18/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 134680.18,
           "currency": "RUB"
@@ -2683,7 +2657,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 6656.1,
           "currency": "USDT"
@@ -2704,12 +2678,12 @@
     ]
   },
   {
-    "order": 53,
+    "id": "import-53",
     "date": "11/16/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 6070.96,
           "currency": "USDT"
@@ -2728,7 +2702,7 @@
         ]
       },
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 184680.18,
           "currency": "RUB"
@@ -2749,12 +2723,12 @@
     ]
   },
   {
-    "order": 51,
+    "id": "import-51",
     "date": "11/6/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 169680.18,
           "currency": "RUB"
@@ -2783,7 +2757,7 @@
         ]
       },
       {
-        "account_name": "IBT",
+        "account": {"name": "IBT", "currency": "EUR"},
         "account_balance": {
           "value": 2039.6,
           "currency": "EUR"
@@ -2804,13 +2778,12 @@
     ]
   },
   {
-    "order": 50,
+    "id": "import-50",
     "date": "11/5/2025",
     "category": "Salary",
-    "color": "green",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 270680.18,
           "currency": "RUB"
@@ -2831,12 +2804,12 @@
     ]
   },
   {
-    "order": 48,
+    "id": "import-48",
     "date": "10/29/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 90185.36,
           "currency": "RUB"
@@ -2855,7 +2828,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 6251.68,
           "currency": "USDT"
@@ -2876,12 +2849,12 @@
     ]
   },
   {
-    "order": 46,
+    "id": "import-46",
     "date": "10/28/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 140185.36,
           "currency": "RUB"
@@ -2900,7 +2873,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 5656.09,
           "currency": "USDT"
@@ -2921,12 +2894,12 @@
     ]
   },
   {
-    "order": 44,
+    "id": "import-44",
     "date": "10/27/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 190185.36,
           "currency": "RUB"
@@ -2945,7 +2918,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 5060.5,
           "currency": "USDT"
@@ -2966,13 +2939,12 @@
     ]
   },
   {
-    "order": 43,
+    "id": "import-43",
     "date": "10/26/2025",
     "category": "Refund",
-    "color": "gray",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 240185.36,
           "currency": "RUB"
@@ -2993,12 +2965,12 @@
     ]
   },
   {
-    "order": 41,
+    "id": "import-41",
     "date": "10/26/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 206585.36,
           "currency": "RUB"
@@ -3017,7 +2989,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 4471.92,
           "currency": "USDT"
@@ -3038,12 +3010,12 @@
     ]
   },
   {
-    "order": 39,
+    "id": "import-39",
     "date": "10/25/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 256585.36,
           "currency": "RUB"
@@ -3062,7 +3034,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 3883.34,
           "currency": "USDT"
@@ -3083,12 +3055,12 @@
     ]
   },
   {
-    "order": 36,
+    "id": "import-36",
     "date": "10/24/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 306585.36,
           "currency": "RUB"
@@ -3117,7 +3089,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 3294.76,
           "currency": "USDT"
@@ -3138,13 +3110,12 @@
     ]
   },
   {
-    "order": 33,
+    "id": "import-33",
     "date": "10/23/2025",
     "category": "Exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 356585.36,
           "currency": "RUB"
@@ -3173,7 +3144,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 2706.18,
           "currency": "USDT"
@@ -3194,12 +3165,12 @@
     ]
   },
   {
-    "order": 31,
+    "id": "import-31",
     "date": "10/22/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 406585.36,
           "currency": "RUB"
@@ -3218,7 +3189,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 2117.67,
           "currency": "USDT"
@@ -3239,13 +3210,12 @@
     ]
   },
   {
-    "order": 30,
+    "id": "import-30",
     "date": "10/21/2025",
     "category": "Salary",
-    "color": "green",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 456585.36,
           "currency": "RUB"
@@ -3266,12 +3236,12 @@
     ]
   },
   {
-    "order": 28,
+    "id": "import-28",
     "date": "10/21/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 291130.18,
           "currency": "RUB"
@@ -3290,7 +3260,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 1532.67,
           "currency": "USDT"
@@ -3311,12 +3281,12 @@
     ]
   },
   {
-    "order": 25,
+    "id": "import-25",
     "date": "10/21/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 341130.18,
           "currency": "RUB"
@@ -3345,7 +3315,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 970.87,
           "currency": "USDT"
@@ -3366,13 +3336,12 @@
     ]
   },
   {
-    "order": 24,
+    "id": "import-24",
     "date": "10/21/2025",
     "category": "Salary",
-    "color": "green",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 381130.18,
           "currency": "RUB"
@@ -3393,12 +3362,12 @@
     ]
   },
   {
-    "order": 22,
+    "id": "import-22",
     "date": "10/19/2025",
     "category": "Exchange",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 215675,
           "currency": "RUB"
@@ -3428,7 +3397,7 @@
         ]
       },
       {
-        "account_name": "IBT",
+        "account": {"name": "IBT", "currency": "EUR"},
         "account_balance": {
           "value": 1009.9,
           "currency": "EUR"
@@ -3449,12 +3418,12 @@
     ]
   },
   {
-    "order": 21,
+    "id": "import-21",
     "date": "10/17/2025",
     "category": "Salary",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 316475,
           "currency": "RUB"
@@ -3475,13 +3444,12 @@
     ]
   },
   {
-    "order": 20,
+    "id": "import-20",
     "date": "10/7/2025",
     "category": "Exchange",
-    "color": "blue",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 131475,
           "currency": "RUB"
@@ -3500,7 +3468,7 @@
         ]
       },
       {
-        "account_name": "Bybit",
+        "account": {"name": "Bybit", "currency": "USDT"},
         "account_balance": {
           "value": 500,
           "currency": "USDT"
@@ -3521,13 +3489,12 @@
     ]
   },
   {
-    "order": 18,
+    "id": "import-18",
     "date": "10/6/2025",
     "category": "Salary",
-    "color": "green",
     "movements": [
       {
-        "account_name": "ТБанк",
+        "account": {"name": "ТБанк", "currency": "RUB"},
         "account_balance": {
           "value": 172975,
           "currency": "RUB"
