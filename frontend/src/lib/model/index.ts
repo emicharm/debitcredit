@@ -29,12 +29,14 @@ export function formatAmount(amount: Amount, sep: string = ' '): string {
 
 export type MovementKind = "debit" | "credit"
 
-interface MovementValue {
+export interface MovementValue {
     description: string;
     is_internal: boolean;
-    is_exchanged?: boolean;
+    is_calculated: boolean;
     amount: Amount;
     kind: MovementKind;
+    exchanged?: boolean;
+    amount_exchanged?: Amount;
 };
 
 interface Movement {

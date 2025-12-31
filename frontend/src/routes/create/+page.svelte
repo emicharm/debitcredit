@@ -4,7 +4,7 @@
     import { goto } from '$app/navigation';
     import CategorySelect from '$lib/components/CategorySelect.svelte';
     import AmountInput from '$lib/components/AmountInput.svelte';
-    import ValueDisplayForm from "$lib/components/form/Value.svelte";
+	import Value from '$lib/components/verbose/Value.svelte';
 
     import { createTransaction } from "$lib/database"
 	import Account from "$lib/components/verbose/Account.svelte";
@@ -52,14 +52,14 @@
         <div class="space-y-6">
             {#each transaction.movements as movement, movementIdx}
                 <div class="bg-neutral-900 rounded-lg p-4">
-                    <!-- <AccountDisplay account={movement.account} account_balance={movement.account_balance} /> -->
-                    <!-- <Account account={movement.account} account_balance={movement.account_balance}/> -->
-
-                        <Account bind:account={movement.account} bind:balance={movement.account_balance} edit={true} />
-
+                    <Account bind:account={movement.account} bind:balance={movement.account_balance} edit={true} />
                     <div class="space-y-3">
-                        {#each movement.values as value}
-                            <ValueDisplayForm {value} />
+                        {#each movement.values as value, valueIdx}
+                            <Value
+                                bind:value={movement.values[valueIdx]}
+                                account={movement.account}
+                                edit={true}
+                            />
                         {/each}
                     </div>
                 </div>

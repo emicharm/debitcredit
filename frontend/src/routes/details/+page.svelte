@@ -3,8 +3,8 @@
     import { formatAmount } from '$lib/model';
     import { goto } from '$app/navigation';
     import CategoryDisplay from '$lib/components/CategoryDisplay.svelte';
-    import ValueDisplay from '$lib/components/details/Value.svelte';
 	import Account from '$lib/components/verbose/Account.svelte';
+	import Value from '$lib/components/verbose/Value.svelte';
 
     let cell = $state($selectedTransaction);
 
@@ -29,18 +29,14 @@
             <div class="space-y-6">
                 {#each cell.movements as movement, movementIdx}
                     <div class="bg-neutral-900 rounded-lg p-4">
-                        <!-- <AccountDisplay account={movement.account} account_balance={movement.account_balance} /> -->
                         <Account bind:account={movement.account} bind:balance={movement.account_balance} edit={false} />
 
                         <div class="space-y-3">
-                            {#each movement.values as value}
-                                <ValueDisplay 
-                                    description={value.description}
-                                    kind={value.kind}
-                                    is_internal={value.is_internal}
-                                    is_exchanged={value.is_exchanged}
-                                    amount={value.amount}
+                            {#each movement.values as value, valueIdx}
+                                <Value
+                                    bind:value={movement.values[valueIdx]}
                                     account={movement.account}
+                                    edit={false}
                                 />
                             {/each}
                         </div>

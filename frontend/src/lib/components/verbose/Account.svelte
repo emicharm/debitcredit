@@ -16,8 +16,8 @@
 </script>
 
 <div class="flex flex-col justify-between items-stretch mb-3">
-    <div class="flex">
-        <h2 class="flex-1 text-md font-semibold">{account.name} {account.currency} CHUPAPI MUNYANYA</h2>
+    <div class="flex items-center-safe">
+        <h2 class="flex-1 text-md font-semibold">{account.name} {account.currency}</h2>
         <div class="font-semibold text-neutral-400 text-xl text-right">
             {#if edit}
                 <AmountInput bind:amount={balance} styleClass="text-xl"/>

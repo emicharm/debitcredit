@@ -1,0 +1,35 @@
+{
+    "date": "12/31/2025",
+    "description": "Carrefour",
+    
+
+    "cafe": 7355,
+    "yogurt frutilla": "5750.00 - 1437.50",
+    "leche": 2619,
+    "yogurt vainilla": "5750.00 - 1437.50",
+
+    "total": "18599"
+
+}
+{
+    "date": "12/31/2025",
+    "description": "Dia",
+    "total": "26800",
+
+    "alcohol fresa fizz": "4900",
+    "cerveza corona": "21900"
+}
+{
+    "date": "12/31/2025",
+    "description":"Dia",
+    "total": 18761.50,
+
+    "nuez pelada": 9900,
+    "pan bco lact": 2500,
+    "queso tybo liviano": 3390,
+    "papa negra comercial": 1297.10,
+    "durazno": 1674.40
+}
+{
+    ""
+}

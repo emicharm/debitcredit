@@ -36,15 +36,15 @@
         const movementData = movement.values.reduce((accValues, value, value_idx) => {
             let amountValue = ''
 
-            if (value.kind === "debit") {
-                amountValue += '-'
-            }
+            // if (value.kind === "debit") {
+            //     amountValue += '-'
+            // }
 
+            if  (value.amount.currency !== movement.account.currency) {
+                amountValue +=  value.amount.currency + " "
+            }
             amountValue += formatAmount(value.amount)
 
-            if (value.is_exchanged || (value.amount.currency !== movement.account.currency)) {
-                amountValue +=  " " +value.amount.currency
-            }
 
 
             let amountValueStyle = ''
@@ -85,10 +85,6 @@
 
         return [...accMovements, ...movementData]
     }, [] as Array<Row>))
-
-    $effect(() => {
-        console.log(rows)
-    })
 
 </script>
 <button class="flex items-top mb-4 cursor-pointer hover:bg-neutral-800 hover:bg-opacity-20 rounded-lg p-2 -m-2 transition-colors" onclick={handleClick}>

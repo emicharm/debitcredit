@@ -64,4 +64,4 @@
     type="text"
     inputmode="decimal"
     style="width: {inputWidth}; min-height: 1em; max-height: 1em; -webkit-text-size-adjust: 100%; vertical-align: center;"
-    class={`text-right bg-transparent border-none outline-none px-0 h-[1em] leading-[1em] py-0 box-content overflow-hidden ${styleClass}`}/>
+    class={`text-right bg-transparent outline-none px-0 h-[1em] leading-[1em] py-0 box-content overflow-hidden border-0 border-b border-gray-600 ${styleClass}`}/>
