@@ -5,6 +5,15 @@ export interface Account {
     currency: string;
 }
 
+export interface StoredAccount {
+    id: string;
+    name: string;
+    currency: string;
+    createdAt: string;
+    archived?: boolean;
+    replacedBy?: string; // ID of the new account that replaces this one
+}
+
 export interface Amount {
     value: number;
     currency: string;
@@ -29,6 +38,11 @@ export function formatAmount(amount: Amount, sep: string = ' '): string {
 
 export type MovementKind = "debit" | "credit"
 
+export interface DetalizationEntry {
+    name: string;
+    amount: Amount;
+}
+
 export interface MovementValue {
     description: string;
     is_internal: boolean;
@@ -37,6 +51,10 @@ export interface MovementValue {
     kind: MovementKind;
     exchanged?: boolean;
     amount_exchanged?: Amount;
+    has_balance?: boolean;
+    balance_after?: Amount;
+    has_detalization?: boolean;
+    detalization?: DetalizationEntry[];
 };
 
 interface Movement {
