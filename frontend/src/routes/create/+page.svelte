@@ -1,34 +1,100 @@
 <script lang="ts">
-    import { formatAmount } from "$lib/model";
-    import { selectedTransaction } from '$lib/stores';
+    import { formatAmount, type Transaction, type MovementValue } from "$lib/model";
     import { goto } from '$app/navigation';
     import CategorySelect from '$lib/components/CategorySelect.svelte';
     import AmountInput from '$lib/components/AmountInput.svelte';
-	import Value from '$lib/components/verbose/Value.svelte';
-
+	import Transfer from '$lib/components/verbose/Transfer.svelte';
+    import SlidePanel from '$lib/components/SlidePanel.svelte';
     import { createTransaction } from "$lib/database"
-	import Account from "$lib/components/verbose/Account.svelte";
+    import { ulid } from 'ulid';
+    import { Plus, ArrowRight } from 'lucide-svelte';
 
-    let template = $state($selectedTransaction);
+    // Create a new empty transaction
+    function createEmptyTransaction(): Transaction {
+        return {
+            id: ulid(),
+            category: '',
+            date: new Date().toISOString(),
+            movements: [
+                // {
+                //     account: { name: '', currency: 'EUR' },
+                //     account_balance: { value: 0, currency: 'EUR' },
+                //     values: [
+                //         {
+                //             description: '',
+                //             is_internal: false,
+                //             is_calculated: false,
+                //             amount: { value: 0, currency: 'EUR' },
+                //             kind: 'debit'
+                //         }
+                //     ]
+                // },
+                // {
+                //     account: { name: '', currency: 'EUR' },
+                //     account_balance: { value: 0, currency: 'EUR' },
+                //     values: [
+                //         {
+                //             description: '',
+                //             is_internal: false,
+                //             is_calculated: false,
+                //             amount: { value: 0, currency: 'EUR' },
+                //             kind: 'credit'
+                //         }
+                //     ]
+                // }
+            ]
+        };
+    }
 
-    let transaction = $state(JSON.parse(JSON.stringify(template)))
-
-    let selectedCategory = $state(transaction?.category || '');
+    let transaction = $state(createEmptyTransaction());
+    let selectedCategory = $state('');
     let isSubmitting = $state(false);
     let error = $state('');
+    let showAddMenu = $state(false);
 
     function goBack() {
         goto('/transactions');
     }
 
+    function addTransfer() {
+        transaction.movements = [...transaction.movements, 
+            {
+                account: null,
+                account_balance: null,
+                values: [
+                    // {
+                    //     description: '',
+                    //     is_internal: false,
+                    //     is_calculated: false,
+                    //     amount: { value: 0, currency: 'EUR' },
+                    //     kind: 'debit'
+                    // }
+                ]
+            },
+            // {
+            //     account: { name: '', currency: 'EUR' },
+            //     account_balance: { value: 0, currency: 'EUR' },
+            //     values: [
+            //         {
+            //             description: '',
+            //             is_internal: false,
+            //             is_calculated: false,
+            //             amount: { value: 0, currency: 'EUR' },
+            //             kind: 'credit'
+            //         }
+            //     ]
+            // }
+        ];
+        showAddMenu = false;
+    }
+
     async function handleSubmit() {
-        if (!transaction) return;
-        
         isSubmitting = true;
         error = '';
         
         try {
             transaction.category = selectedCategory;
+            transaction.id = ulid(); // Generate new ID for submission
             await createTransaction(transaction);
             goto('/transactions');
         } catch (err) {
@@ -41,30 +107,29 @@
 </script>
 
 <div class="mx-4 mt-4">
-    <button onclick={goBack} class="text-blue-500 mb-4">← Back</button>
+    <!-- <button onclick={goBack} class="text-blue-500 mb-4">← Back</button> -->
     
-    <h1 class="text-2xl font-bold mb-6">Повторить операцию</h1>
+    <h1 class="text-2xl font-bold mb-6">Create Transaction</h1>
 
-    {#if transaction}
-        <CategorySelect bind:value={selectedCategory} />
+    <CategorySelect bind:value={selectedCategory} />
         
+    <div class="space-y-6">
+        {#each transaction.movements as movement, movementIdx}
+            <div class="bg-neutral-900 rounded-lg p-1">
+                <Transfer bind:transfer={transaction.movements[movementIdx]} edit={true} />
+            </div>
+        {/each}
+    </div>
 
-        <div class="space-y-6">
-            {#each transaction.movements as movement, movementIdx}
-                <div class="bg-neutral-900 rounded-lg p-4">
-                    <Account bind:account={movement.account} bind:balance={movement.account_balance} edit={true} />
-                    <div class="space-y-3">
-                        {#each movement.values as value, valueIdx}
-                            <Value
-                                bind:value={movement.values[valueIdx]}
-                                account={movement.account}
-                                edit={true}
-                            />
-                        {/each}
-                    </div>
-                </div>
-            {/each}
-        </div>
+    <!-- Add Button -->
+    <button 
+        type="button"
+        onclick={() => showAddMenu = true}
+        class="w-full bg-neutral-800 hover:bg-neutral-700 text-white font-medium text-lg py-4 px-6 rounded-lg mt-6 transition-colors flex items-center justify-center gap-2"
+    >
+        <Plus class="w-5 h-5" />
+        Add
+    </button>
         
         {#if error}
             <div class="bg-red-500/10 border border-red-500 text-red-500 px-4 py-3 rounded-lg mt-6">
@@ -79,7 +144,21 @@
         >
             {isSubmitting ? 'Creating...' : 'Create Transaction'}
         </button>
-    {:else}
-        <p class="text-neutral-400">No template selected</p>
-    {/if}
 </div>
+
+<SlidePanel 
+    show={showAddMenu} 
+    title="Add to Transaction"
+    onClose={() => showAddMenu = false}
+>
+    <div class="flex flex-col py-2">
+        <button
+            type="button"
+            onclick={addTransfer}
+            class="w-full px-4 py-4 flex items-center justify-between hover:bg-neutral-800 transition-colors"
+        >
+            <span class="text-white font-medium">Transfer</span>
+            <ArrowRight class="w-5 h-5 text-neutral-500" />
+        </button>
+    </div>
+</SlidePanel>

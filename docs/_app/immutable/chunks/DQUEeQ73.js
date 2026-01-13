@@ -1,0 +1,1 @@
+function c(a,l=" "){Math.abs(a.value);const s=Math.abs(a.value).toFixed(2).split("."),r=s[0].replace(/\B(?=(\d{3})+(?!\d))/g,l),e=s[1],i=a.value<0?"-":"";let t=r;return e[1]!=="0"?t=t+"."+e:e[0]!=="0"&&(t=t+"."+e.slice(0,1)),`${i}${t}`}export{c as f};

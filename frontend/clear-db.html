@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Clear Database</title></head>
+<body>
+<h1>Clearing Database...</h1>
+<script>
+indexedDB.deleteDatabase('DebitCreditV1').onsuccess = () => {
+    document.body.innerHTML = '<h1>Database cleared! Close this tab and restart your app.</h1>';
+};
+</script>
+</body>
+</html>

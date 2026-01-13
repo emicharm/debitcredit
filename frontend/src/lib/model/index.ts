@@ -57,9 +57,9 @@ export interface MovementValue {
     detalization?: DetalizationEntry[];
 };
 
-interface Movement {
-    account: Account;
-    account_balance: Amount;
+export interface Movement {
+    account: Account | null;
+    account_balance: Amount | null;
     values: MovementValue[];
 }
 

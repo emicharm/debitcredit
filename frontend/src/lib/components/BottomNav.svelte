@@ -7,8 +7,10 @@
 	let lastSelectedMenuItem = $state<typeof menuItems[0] | null>(null);
 	
 	const mainNavItems = [
-		{ path: '/transactions', label: 'Transactions', icon: Receipt },
-		{ path: '/create', label: 'Create', icon: Plus },
+		// { path: '/transactions', label: 'Transactions', icon: Receipt },
+		// { path: '/create', label: 'Create', icon: Plus },
+		{ path: '/v1/list', label: 'Transactions', icon: Receipt },
+		{ path: '/v1/create', label: 'Create', icon: Plus },
 	];
 	
 	const menuItems = [
@@ -95,7 +97,7 @@
 			</a>
 		{/each}
 		
-		<button
+		<!-- <button
 			onclick={(e) => toggleMenu(e)}
 			class="menu-button flex flex-col items-center justify-center flex-1 py-2 px-3 rounded-lg transition-colors text-white"
 			class:text-blue-400={showMenu || activeMenuItem}
@@ -103,7 +105,7 @@
 		>
 			<svelte:component this={moreButtonIcon} size={24} class="mb-1" />
 			<span class="text-xs font-medium">{moreButtonLabel}</span>
-		</button>
+		</button> -->
 	</div>
 </nav>
 

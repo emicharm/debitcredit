@@ -1,6 +1,6 @@
 import { db } from './index';
 import { ulid } from 'ulid';
-import type { StoredAccount } from '$lib/model';
+import type { StoredAccount, Account } from '$lib/model';
 import { liveQuery } from 'dexie';
 
 export async function createAccount(name: string, currency: string): Promise<StoredAccount> {
@@ -24,6 +24,22 @@ export async function getAccounts(): Promise<StoredAccount[]> {
 
 export async function getAccount(id: string): Promise<StoredAccount | undefined> {
     return await db.accounts.get(id);
+}
+
+export async function accountExists(account: Account): Promise<boolean> {
+    if (!account || !account.name || !account.currency) {
+        return false;
+    }
+    
+    const existing = await db.accounts
+        .filter(acc => 
+            !acc.archived && 
+            acc.name === account.name && 
+            acc.currency === account.currency
+        )
+        .first();
+    
+    return existing !== undefined;
 }
 
 export async function archiveAccount(id: string, replacedBy: string): Promise<void> {
