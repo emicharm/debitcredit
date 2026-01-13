@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { Receipt, Plus, CreditCard, BarChart3, Menu, X } from 'lucide-svelte';
 	
 	let showMenu = $state(false);
@@ -9,13 +10,13 @@
 	const mainNavItems = [
 		// { path: '/transactions', label: 'Transactions', icon: Receipt },
 		// { path: '/create', label: 'Create', icon: Plus },
-		{ path: '/v1/list', label: 'Transactions', icon: Receipt },
-		{ path: '/v1/create', label: 'Create', icon: Plus },
+		{ path: `${base}/v1/list`, label: 'Transactions', icon: Receipt },
+		{ path: `${base}/v1/create`, label: 'Create', icon: Plus },
 	];
 	
 	const menuItems = [
-		{ path: '/accounts', label: 'Accounts', icon: CreditCard },
-		{ path: '/details', label: 'Details', icon: BarChart3 },
+		{ path: `${base}/accounts`, label: 'Accounts', icon: CreditCard },
+		{ path: `${base}/details`, label: 'Details', icon: BarChart3 },
 	];
 	
 	let activeMenuItem = $derived(menuItems.find(item => $page.url.pathname === item.path));

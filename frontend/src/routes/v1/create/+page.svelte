@@ -2,6 +2,7 @@
     import { db } from '$lib/v1/database/index';
     import type { UserTransaction } from '$lib/v1/database/model';
     import { goto } from '$app/navigation';
+    import { base } from '$app/paths';
 
     let date = $state(new Date().toISOString().split('T')[0]);
     let description = $state('');
@@ -26,7 +27,7 @@
             };
 
             await db.transactions.add(transaction);
-            goto('/v1/list');
+            goto(`${base}/v1/list`);
         } catch (error) {
             console.error('Failed to create transaction:', error);
             alert('Failed to create transaction');
