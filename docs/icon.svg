@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Light background -->
+  <rect width="512" height="512" rx="128" fill="#f3f4f6"/>
+
+  <!-- Dollar sign in center -->
+  <path d="M256 140 L256 180 M256 332 L256 372"
+        stroke="#6b7280" stroke-width="16" stroke-linecap="round"/>
+
+  <path d="M296 200 C296 180, 276 160, 256 160 C236 160, 216 180, 216 200 C216 220, 236 230, 256 230 C276 230, 296 240, 296 280 C296 320, 276 332, 256 332 C236 332, 216 312, 216 292"
+        stroke="#1f2937" stroke-width="24" stroke-linecap="round" fill="none"/>
+
+  <!-- Subtle plus and minus indicators -->
+  <g opacity="0.4">
+    <!-- Plus sign (credit) -->
+    <line x1="380" y1="180" x2="420" y2="180" stroke="#10b981" stroke-width="12" stroke-linecap="round"/>
+    <line x1="400" y1="160" x2="400" y2="200" stroke="#10b981" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Minus sign (debit) -->
+    <line x1="92" y1="312" x2="132" y2="312" stroke="#ef4444" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

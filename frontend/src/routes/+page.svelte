@@ -24,7 +24,7 @@
 
 <!-- Bottom Navigation Bar -->
 <nav class="fixed bottom-0 left-0 right-0 bg-neutral-900 shadow-lg z-40">
-    <div class="flex justify-around items-center h-16 max-w-5xl mx-auto px-4">
+    <div class="flex justify-around items-center h-16 max-w-5xl mx-auto px-4 pb-4">
         {#each navItems as item}
             {@const Icon = item.icon}
             <button
