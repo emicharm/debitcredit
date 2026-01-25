@@ -1,1 +1,0 @@
-import{m as o,k as _,l as c,E as d,W as E,X as T,Y as b,Z as m,_ as f}from"./DGbS--Tb.js";import{B as p}from"./91cOknPb.js";function k(t,i,l=!1){_&&c();var e=new p(t),u=l?d:0;function n(a,r){if(_){const h=E(t)===T;if(a===h){var s=b();m(s),e.anchor=s,f(!1),e.ensure(a,r),f(!0);return}}e.ensure(a,r)}o(()=>{var a=!1;i((r,s=!0)=>{a=!0,n(s,r)}),a||n(!1,null)},u)}export{k as i};

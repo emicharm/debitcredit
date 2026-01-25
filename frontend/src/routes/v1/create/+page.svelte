@@ -3,6 +3,7 @@
     import type { UserTransaction } from '$lib/v1/database/model';
     import { goto } from '$app/navigation';
     import { base } from '$app/paths';
+	import { ulid } from 'ulid';
 
     let date = $state(new Date().toISOString().split('T')[0]);
     let description = $state('');
@@ -18,6 +19,7 @@
 
         try {
             const transaction: UserTransaction = {
+                id: ulid(),
                 date: new Date(date),
                 description,
                 amount,

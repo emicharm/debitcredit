@@ -1,1 +1,0 @@
-import{U as o,u,V as t,H as a,j as c}from"./DGbS--Tb.js";function f(n){t===null&&o(),a&&t.l!==null?l(t).m.push(n):u(()=>{const e=c(n);if(typeof e=="function")return e})}function l(n){var e=n.l;return e.u??={a:[],b:[],m:[]}}export{f as o};
