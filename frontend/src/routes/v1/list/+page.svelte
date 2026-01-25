@@ -3,7 +3,7 @@
     import { liveQuery } from 'dexie';
 
     const transactions = liveQuery(() => 
-        db.transactions.toArray()
+        db.transactions.reverse().toArray()
     );
 </script>
 
@@ -18,20 +18,35 @@
         {:else}
             <div class="space-y-2">
                 {#each $transactions as transaction}
-                    <div class="bg-neutral-800 rounded-lg p-4">
+                    {@const kind = transaction.kind || 'debit'}
+                    <div class="bg-neutral-800 rounded-lg p-4 border-l-4"
+                         class:border-red-500={kind === 'debit'}
+                         class:border-green-500={kind === 'credit'}>
                         <div class="flex justify-between items-start mb-2">
                             <div>
                                 <h3 class="font-semibold">{transaction.description}</h3>
                                 <p class="text-sm text-neutral-400">{transaction.account}</p>
                             </div>
                             <div class="text-right">
-                                <p class="font-semibold">{transaction.amount.toFixed(2)} {transaction.currency}</p>
+                                <p class="font-semibold"
+                                   class:text-red-400={kind === 'debit'}
+                                   class:text-green-400={kind === 'credit'}>
+                                    {kind === 'debit' ? '-' : '+'}{transaction.amount.toFixed(2)} {transaction.currency}
+                                </p>
                                 <p class="text-sm text-neutral-400">{transaction.category}</p>
                             </div>
                         </div>
-                        <p class="text-xs text-neutral-500">
-                            {new Date(transaction.date).toLocaleDateString()}
-                        </p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-xs text-neutral-500">
+                                {new Date(transaction.date).toLocaleDateString()}
+                            </p>
+                            <span class="text-xs px-2 py-1 rounded-full"
+                                  class:bg-red-600={kind === 'debit'}
+                                  class:bg-green-600={kind === 'credit'}
+                                  class:text-white={kind}>
+                                {kind === 'debit' ? 'Debit' : kind === 'credit' ? 'Credit' : 'Debit'}
+                            </span>
+                        </div>
                     </div>
                 {/each}
             </div>

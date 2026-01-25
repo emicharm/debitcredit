@@ -1,5 +1,7 @@
 import type { ULID } from "ulid";
 
+export type TransactionKind = 'debit' | 'credit';
+
 export interface UserTransaction {
     id: ULID;
     date: Date;
@@ -8,4 +10,5 @@ export interface UserTransaction {
     currency: string;
     account: string;
     category: string;
+    kind: TransactionKind;
 }

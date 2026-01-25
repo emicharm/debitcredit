@@ -1,8 +1,7 @@
 <script lang="ts">
     import { db } from '$lib/v1/database/index';
-    import type { UserTransaction } from '$lib/v1/database/model';
-    import { goto } from '$app/navigation';
-    import { base } from '$app/paths';
+    import type { UserTransaction, TransactionKind } from '$lib/v1/database/model';
+    import { navigation } from '$lib/navigation.svelte';
 	import { ulid } from 'ulid';
 
     let date = $state(new Date().toISOString().split('T')[0]);
@@ -11,6 +10,7 @@
     let currency = $state('EUR');
     let account = $state('');
     let category = $state('');
+    let kind = $state<TransactionKind>('debit');
     let isSubmitting = $state(false);
 
     async function handleSubmit(e: Event) {
@@ -25,11 +25,12 @@
                 amount,
                 currency,
                 account,
-                category
+                category,
+                kind
             };
 
             await db.transactions.add(transaction);
-            goto(`${base}/v1/list`);
+            navigation.navigateTo('transactions');
         } catch (error) {
             console.error('Failed to create transaction:', error);
             alert('Failed to create transaction');
@@ -116,6 +117,38 @@
                 required
                 class="bg-neutral-800 text-white px-3 py-2 rounded border border-neutral-700 focus:border-blue-500 outline-none"
             />
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label class="text-sm text-neutral-400">Transaction Type</label>
+            <div class="flex gap-2">
+                <button
+                    type="button"
+                    onclick={() => kind = 'debit'}
+                    class="flex-1 py-2 px-4 rounded-lg border transition-all"
+                    class:bg-red-600={kind === 'debit'}
+                    class:border-red-600={kind === 'debit'}
+                    class:text-white={kind === 'debit'}
+                    class:bg-neutral-800={kind !== 'debit'}
+                    class:border-neutral-700={kind !== 'debit'}
+                    class:text-neutral-400={kind !== 'debit'}
+                >
+                    Debit (-)
+                </button>
+                <button
+                    type="button"
+                    onclick={() => kind = 'credit'}
+                    class="flex-1 py-2 px-4 rounded-lg border transition-all"
+                    class:bg-green-600={kind === 'credit'}
+                    class:border-green-600={kind === 'credit'}
+                    class:text-white={kind === 'credit'}
+                    class:bg-neutral-800={kind !== 'credit'}
+                    class:border-neutral-700={kind !== 'credit'}
+                    class:text-neutral-400={kind !== 'credit'}
+                >
+                    Credit (+)
+                </button>
+            </div>
         </div>
 
         <button
