@@ -2,7 +2,7 @@
   "name": "DebitCredit",
   "short_name": "DebitCredit",
   "description": "Offline-first accounting application",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#171717",
   "theme_color": "#171717",
