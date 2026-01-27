@@ -3,6 +3,8 @@
     import type { UserTransaction, TransactionKind } from '$lib/v1/database/model';
     import { navigation } from '$lib/navigation.svelte';
 	import { ulid } from 'ulid';
+    import { liveQuery } from 'dexie';
+    import AutocompleteInput from '$lib/components/AutocompleteInput.svelte';
 
     let date = $state(new Date().toISOString().split('T')[0]);
     let description = $state('');
@@ -12,6 +14,32 @@
     let category = $state('');
     let kind = $state<TransactionKind>('debit');
     let isSubmitting = $state(false);
+
+    // Get all transactions for suggestions
+    const transactions = liveQuery(() =>
+        db.transactions.toArray()
+    );
+
+    // Extract unique values for suggestions
+    const suggestions = $derived.by(() => {
+        if (!$transactions) return { descriptions: [], accounts: [], categories: [] };
+
+        const descriptions = new Set<string>();
+        const accounts = new Set<string>();
+        const categories = new Set<string>();
+
+        $transactions.forEach(t => {
+            if (t.description) descriptions.add(t.description);
+            if (t.account) accounts.add(t.account);
+            if (t.category) categories.add(t.category);
+        });
+
+        return {
+            descriptions: Array.from(descriptions).sort(),
+            accounts: Array.from(accounts).sort(),
+            categories: Array.from(categories).sort()
+        };
+    });
 
     async function handleSubmit(e: Event) {
         e.preventDefault();
@@ -57,25 +85,23 @@
 
         <div class="flex flex-col gap-2">
             <label for="description" class="text-sm text-neutral-400">Description</label>
-            <input
-                id="description"
-                type="text"
+            <AutocompleteInput
                 bind:value={description}
+                suggestions={suggestions.descriptions}
                 placeholder="Enter description"
-                required
-                class="bg-neutral-800 text-white px-3 py-2 rounded border border-neutral-700 focus:border-blue-500 outline-none"
+                required={true}
+                id="description"
             />
         </div>
 
         <div class="flex flex-col gap-2">
             <label for="account" class="text-sm text-neutral-400">Account</label>
-            <input
-                id="account"
-                type="text"
+            <AutocompleteInput
                 bind:value={account}
+                suggestions={suggestions.accounts}
                 placeholder="Enter account"
-                required
-                class="bg-neutral-800 text-white px-3 py-2 rounded border border-neutral-700 focus:border-blue-500 outline-none"
+                required={true}
+                id="account"
             />
         </div>
 
@@ -109,13 +135,12 @@
 
         <div class="flex flex-col gap-2">
             <label for="category" class="text-sm text-neutral-400">Category</label>
-            <input
-                id="category"
-                type="text"
+            <AutocompleteInput
                 bind:value={category}
+                suggestions={suggestions.categories}
                 placeholder="Enter category"
-                required
-                class="bg-neutral-800 text-white px-3 py-2 rounded border border-neutral-700 focus:border-blue-500 outline-none"
+                required={true}
+                id="category"
             />
         </div>
 
