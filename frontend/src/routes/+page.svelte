@@ -1,15 +1,17 @@
 <script lang="ts">
-    import { Receipt, Plus } from 'lucide-svelte';
+    import { Receipt, Plus, TrendingUp } from 'lucide-svelte';
     import { navigation, type View } from '$lib/navigation.svelte';
 
     // Import components for different views
     import TransactionsList from './v1/list/+page.svelte';
     import CreateTransaction from './v1/create/+page.svelte';
+    import Statistics from './v1/statistics/+page.svelte';
 
     // Navigation items
     const navItems = [
         { id: 'transactions', label: 'Transactions', icon: Receipt },
         { id: 'create', label: 'Create', icon: Plus },
+        { id: 'statistics', label: 'Statistics', icon: TrendingUp },
     ] as const;
 </script>
 
@@ -19,6 +21,8 @@
         <TransactionsList />
     {:else if navigation.currentView === 'create'}
         <CreateTransaction />
+    {:else if navigation.currentView === 'statistics'}
+        <Statistics />
     {/if}
 </div>
 

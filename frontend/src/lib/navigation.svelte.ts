@@ -1,5 +1,5 @@
 // Shared navigation state for client-side routing
-export type View = 'transactions' | 'create';
+export type View = 'transactions' | 'create' | 'statistics';
 
 class NavigationStore {
     currentView = $state<View>('transactions');
